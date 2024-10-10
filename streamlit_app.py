@@ -1,6 +1,6 @@
 import streamlit as st
 
-"Remove the package from requirements.txt"
+"Add the package back to requirements.txt"
 
 from langchain_community.chat_message_histories import (
     StreamlitChatMessageHistory,
