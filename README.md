@@ -1,19 +1,13 @@
-# 🎈 Blank app template
+# สิ่งที่ได้เรียนรู้ภายใน repo นี้
+## 1.
+ให้
+```
+ret = StreamlitChatMessageHistory(key="chat_messages")
+```
+จะได้ว่า
+`st.session_state.chat_messages` เหมือน `ret.messages`
 
-A simple Streamlit app template for you to modify!
+## 2.
+การ include/exclude ชื่อ package ออกจาก requirements.txt จะมีผล กับ application บน streamlit cloud เท่านั้น ไม่เกี่ยวกับเวลารันใน Simple Browser ของ codespace
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+ถ้าจะให้ import package ใน codespace ได้ ต้อง pip install <pkg-name> ใน terminal เอา
