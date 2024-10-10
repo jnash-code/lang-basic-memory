@@ -9,6 +9,8 @@ history = StreamlitChatMessageHistory(key="chat_messages")
 history.add_user_message("hi!")
 history.add_ai_message("whats up?")
 
+"HA HA"
+
 "From returned variable"
 history.messages
 
