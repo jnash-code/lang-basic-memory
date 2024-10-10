@@ -1,6 +1,10 @@
 import streamlit as st
 
-st.title("🎈 My new app")
-st.write(
-    "Let's start building! For help and inspiration, head over to [docs.streamlit.io](https://docs.streamlit.io/)."
+from langchain_community.chat_message_histories import (
+    StreamlitChatMessageHistory,
 )
+
+history = StreamlitChatMessageHistory(key="chat_messages")
+
+history.add_user_message("hi!")
+history.add_ai_message("whats up?")
