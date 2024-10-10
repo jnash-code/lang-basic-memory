@@ -1,6 +1,6 @@
 import streamlit as st
 
-"Add the package back to requirements.txt"
+"Comment the package in requirements.txt"
 
 from langchain_community.chat_message_histories import (
     StreamlitChatMessageHistory,
