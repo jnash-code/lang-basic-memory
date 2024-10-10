@@ -1,6 +1,6 @@
 import streamlit as st
 
-"Comment the package in requirements.txt"
+"Delete # in front of the package in requirements.txt"
 
 from langchain_community.chat_message_histories import (
     StreamlitChatMessageHistory,
