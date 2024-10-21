@@ -6,6 +6,16 @@ msgs = StreamlitChatMessageHistory(key="special_app_key")
 
 ...
 
+prompt = ChatPromptTemplate.from_messages(
+    [
+        ("system", "You are an AI chatbot having a conversation with a human."),
+        MessagesPlaceholder(variable_name="history"),
+        ("human", "{question}"),
+    ]
+)
+
+chain = prompt | ChatOpenAI(model="gpt-4o-mini")
+
 chain_with_history = RunnableWithMessageHistory(
     chain,
     lambda session_id: msgs,  # Always return the instance created earlier
